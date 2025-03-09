@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- 検索にヒットさせない -->
+  <!-- <meta name="robots" content="noindex" /> -->
+
+  <!-- twitter card -->
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:site" content="@wanosuke_t" />
+  <meta property="og:url" content="https://wanosuke.jp/" />
+  <meta property="og:title" content="和ノ助｜誠実・丁寧なWeb制作" />
+  <meta property="og:description"
+    content="フリーランスWebコーダー「わのすけ」のポートフォリオサイト。「Web制作を頼みたい」「既存のWebサイトを修正・改善したい」など、気軽にご相談ください。" />
+  <meta property="og:image" content="https://wanosuke.jp/img/x_card.png" />
+
+  <title>わのすけ</title>
+  <meta name="description" content="フリーランスWebコーダー「わのすけ」のポートフォリオサイト。「Web制作を頼みたい」「既存のWebサイトを修正・改善したい」など、気軽にご相談ください。" />
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet">
+  <!-- スタイルシート -->
+  <link rel="stylesheet" href="css/reset.css" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body>
+  <div class="wrapper">
+    <header class="header">
+      <div class="header__inner">
+        <h1 class="header__logo">
+          <a href="#">
+            <picture>
+              <source media="(min-width: 768px)" srcset="./img/logo.png" />
+              <img src="./img/sp/logo-sp.png" alt="Web制作 わのすけ" />
+            </picture>
+          </a>
+        </h1>
+        <button class="header__menu-button">
+          <span class="header__menu-button-text">メニュー</span>
+          <div class="header__menu-button-bars">
+            <span class="header__menu-button-bar"></span>
+            <span class="header__menu-button-bar"></span>
+            <span class="header__menu-button-bar"></span>
+          </div>
+        </button>
+        <nav class="header__nav">
+          <ul class="header__nav-list">
+            <li class="header__nav-item">
+              <a class="header__nav-link" href="#works">実績紹介</a>
+            </li>
+            <li class="header__nav-item">
+              <a class="header__nav-link" href="#service">提供サービス</a>
+            </li>
+            <li class="header__nav-item">
+              <a class="header__nav-link" href="#flow">制作の流れ</a>
+            </li>
+            <li class="header__nav-item">
+              <a class="header__nav-link" href="#about">私について</a>
+            </li>
+          </ul>
+          <div class="header__button-contact"><a class="button" href="#contact">お問い合わせ</a></div>
+        </nav>
+
+      </div>
+    </header>
+
+    <!-- ドロワーメニュー -->
+    <nav class="drawer__nav">
+      <ul class="drawer__nav-list">
+        <li class="drawer__nav-item">
+          <a class="drawer__nav-link" href="#works">実績紹介</a>
+        </li>
+        <li class="drawer__nav-item">
+          <a class="drawer__nav-link" href="#service">提供サービス</a>
+        </li>
+        <li class="drawer__nav-item">
+          <a class="drawer__nav-link" href="#flow">制作の流れ</a>
+        </li>
+        <li class="drawer__nav-item">
+          <a class="drawer__nav-link" href="#about">私について</a>
+        </li>
+      </ul>
+      <div class="header__button-contact"><a class="button" href="#contact">お問い合わせ</a></div>
+    </nav>
+  </div>
+
+  <section class="fv">
+    <div class="fv__bg">
+    </div>
+    <div class="fv__inner">
+      <div class="fv__logo"><img src="./img/logo.png" alt="" width="500" height="500"></div>
+      <div class="fv__content">
+        <p class="fv__text">デザインカンプから、正確・丁寧に<br>Webサイトをコーディングします</p>
+        <div class="fv__button"><a class="button" href="#contact">お問い合わせ</a></div>
+      </div>
+    </div>
+  </section>
+
+
+  <section class="works section-base">
+    <div class="works__inner inner">
+      <div class="title">
+        <h2 class="title__text">実績紹介</h2>
+      </div>
+      <p class="works__description description">これまで制作したWebサイトです。また、当サイトも自ら制作していますので実績の一つとして御覧ください。</p>
+      <ul class="works__list">
+        <li class="works__item">
+          <div class="works__item-img">
+            <img src="./img/img_works1.png" alt="" />
+          </div>
+          <h3 class="works__item-name">ポートフォリオサイト</h3>
+          <a href="#" class="works__item-link">詳しく見る</a>
+        </li>
+        <li class="works__item">
+          <div class="works__item-img">
+            <img src="./img/img_works2.jpg" alt="" />
+          </div>
+          <h3 class="works__item-name">
+            スイーツ店公式サイト（サンプル）
+          </h3>
+          <a href="https://wanosuke-t.github.io/wanosuke_practice/" target="_blank" class="works__item-link">詳しく見る</a>
+        </li>
+      </ul>
+
+    </div>
+
+  </section>
+
+
+
+  <section class="service section-base">
+    <div class="service__inner inner">
+      <div class="title">
+        <h2 class="title__text">提供サービス</h2>
+      </div>
+      <p class="service__description description">行っているサービス内容です。「Webサイトのコーディングを依頼したい」「既存のWebサイトを修正・改善したい」など、気軽にご相談ください。
+      </p>
+      <ul class="service__list">
+        <li class="service__item">
+          <div class="service__item-img">
+            <img src="./img/img_service1.svg" alt="" />
+          </div>
+          <h3 class="service__item-name">コーディング代行</h3>
+          <p class="service__item-text">
+            デザインカンプ等の仕様をもとに、HTML・CSS・JavaScriptでコーディングを行います。<br />
+            レスポンシブ対応や、シンプルなアニメーション実装も対応可能です。
+          </p>
+        </li>
+        <li class="service__item">
+          <div class="service__item-img">
+            <img src="./img/img_service2.svg" alt="" />
+          </div>
+          <h3 class="service__item-name">Webサイトの修正・改善</h3>
+          <p class="service__item-text">
+            既存サイトの文言変更、デザイン調整、レイアウト崩れの修正など、軽微な修正を承ります。<br />
+            また、CSSやJavaScriptの調整も可能です。
+          </p>
+        </li>
+        <li class="service__item">
+          <div class="service__item-img">
+            <img src="./img/img_service3.svg" alt="" />
+          </div>
+          <h3 class="service__item-name">Webサイトの相談</h3>
+          <p class="service__item-text">
+            コーディングに関するご相談を無料でお受けしております。<br />
+            「このデザインはコーディングできる？」「修正できるか相談したい」など、お気軽にお問い合わせください。
+          </p>
+        </li>
+      </ul>
+    </div>
+  </section>
+
+
+  <section class="flow section-base">
+    <div class="flow__inner inner">
+      <div class="title">
+        <h2 class="title__text">制作の流れ</h2>
+      </div>
+      <p class="flow__description description">ご相談〜納品までの大まかな流れです。状況に応じて柔軟に対応いたします。</p>
+      <ol class="flow__list">
+        <li class="flow__item">
+          <p class="flow__item-num">1</p>
+          <div class="flow__item-img">
+            <img src="./img/img_flow1.svg" alt="" />
+          </div>
+          <h3 class="flow__item-name">ご相談・お見積り</h3>
+          <p class="flow__item-text">
+            要件や納期、予算などお気軽にご相談ください。<br />
+            対応内容に応じてお見積りをお送りいたします。
+          </p>
+        </li>
+        <li class="flow__item">
+          <p class="flow__item-num">2</p>
+          <div class="flow__item-img">
+            <img src="./img/img_flow2.svg" alt="" />
+          </div>
+          <h3 class="flow__item-name">コーディング</h3>
+          <p class="flow__item-text">
+            デザインカンプを元にコーディングを行います。コーディング後は品質チェックを行い調整します。
+          </p>
+        </li>
+        <li class="flow__item">
+          <p class="flow__item-num">3</p>
+          <div class="flow__item-img">
+            <img src="./img/img_flow3.svg" alt="" />
+          </div>
+          <h3 class="flow__item-name">確認</h3>
+          <p class="flow__item-text">
+            お客様にコーディングしたサイトをご確認頂きます。不足部分の修正と対応を行います。
+          </p>
+        </li>
+        <li class="flow__item">
+          <p class="flow__item-num">4</p>
+          <div class="flow__item-img">
+            <img src="./img/img_flow4.svg" alt="" />
+          </div>
+          <h3 class="flow__item-name">納品</h3>
+          <p class="flow__item-text">
+            コーディング後のファイル一式を納品いたします。<br />本番サーバーへのアップロードも対応可能です。
+          </p>
+        </li>
+      </ol>
+    </div>
+  </section>
+
+
+  <section class="about section-base">
+    <div class="about__inner inner">
+      <div class="title">
+        <h2 class="title__text">自己紹介</h2>
+      </div>
+      <div class="about__container">
+        <div class="about__img">
+          <img src="./img/img_about_me.jpg" alt="" />
+        </div>
+        <div class="about__content">
+          <p class="about__description">1983年生まれ、埼玉県秩父在住。
+            大学卒業後、SIerにて小規模な法人向けシステムの開発や保守、コンピュータその他周辺機器セットアップサービスの管理・実施を主に担当しておりました。
+            現在は、家庭と両立しながらフリーランスの Webコーダー として活動しています。</p>
+          <p class="about__skill">保有資格</p>
+          <ul class="about__skill-list">
+            <li class="about__skill-item">全商簿記２級</li>
+            <li class="about__skill-item">基本情報技術者試験</li>
+            <li class="about__skill-item">ソフトウェア開発技術者試験</li>
+            <li class="about__skill-item">
+              情報セキュリティスペシャリスト試験
+            </li>
+            <li class="about__skill-item">TOEIC L&R スコア 825点</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- お問い合わせフォーム -->
+  <section class="contact section-base" id="contact">
+    <div class="contact__inner inner">
+      <div class="title">
+        <h2 class="title__text">お問い合わせ</h2>
+      </div>
+      <p class="description">お気軽にお問い合わせください。</p>
+      <div class="contact__form">
+        <!-- form -->
+        <form id="" class="form">
+          <ul class="form__list">
+            <li class="form__item">
+              <div class="form__head">
+                <label for="form__name" class="form__label">お名前</label>
+                <span class="form__tag">必須</span>
+              </div>
+              <div class="form__input">
+                <input id="form__name" class="js-form__input form__input-text" type="text" name="form__name"
+                  placeholder="山田太郎" required />
+              </div>
+            </li>
+            <li class="form__item">
+              <div class="form__head">
+                <label for="form__email" class="form__label">メールアドレス</label>
+                <span class="form__tag">必須</span>
+              </div>
+              <div class="form__input">
+                <input id="form__email" class="js-form__input form__input-text" type="email" name="form__email"
+                  placeholder="info@example.com" required />
+              </div>
+            </li>
+            <li class="form__item">
+              <div class="form__head">
+                <label for="form__type" class="form__label">お問い合わせ内容</label>
+                <span class="form__tag">必須</span>
+              </div>
+              <div class="form__input">
+                <select name="form__type" id="form__type" class="js-form__input form__select" required>
+                  <option value="">選択してください</option>
+                  <option value="">選択項目１</option>
+                  <option value="">選択項目２</option>
+                  <option value="">選択項目３</option>
+                </select>
+              </div>
+            </li>
+            <li class="form__item">
+              <div class="form__head">
+                <label for="your-message" class="form__label">メッセージ</label>
+                <span class="form__tag">必須</span>
+              </div>
+              <div class="form__input">
+                <textarea class="js-form__input form__textarea" name="your-message" id="your-message"
+                  placeholder="このキャンペーンに関するお問い合わせがある方は、こちらにご相談内容をご入力ください。3営業日以内にご返信いたします。" required></textarea>
+              </div>
+            </li>
+          </ul>
+          <div class="form__submit">
+            <input type="submit" value="上記の内容を送信する" class="button form__submit-button">
+          </div>
+        </form>
+        <!-- / form -->
+      </div>
+    </div>
+  </section>
+
+
+
+  <!-- jQuery -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <script src="./js/index.js"></script>
+</body>
+
+</html>
