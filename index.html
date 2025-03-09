@@ -19,6 +19,7 @@
 
   <title>Web制作 わのすけ</title>
   <meta name="description" content="フリーランスWebコーダー「わのすけ」のポートフォリオサイト。「Web制作を頼みたい」「既存のWebサイトを修正・改善したい」など、気軽にご相談ください。" />
+  <link rel="icon" href="img/favicon.png" type="image/x-icon">
 
   <!-- Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -121,24 +122,73 @@
     <div class="works__inner inner">
       <div class="title">
         <h2 class="title__text">実績紹介</h2>
-        <p class="works__description description">これまで制作したWebサイトです。また、当サイトも自ら制作していますので実績の一つとして御覧ください。</p>
+        <p class="works__description description">これまで制作したWebサイトです。また、当サイトも自ら制作していますので実績のひとつとして御覧ください。</p>
       </div>
       <ul class="works__list">
         <li class="works__item">
-          <div class="works__item-img">
-            <img src="./img/img_works1.png" alt="" />
-          </div>
-          <h3 class="works__item-name">ポートフォリオサイト</h3>
-          <a href="#" class="works__item-link">詳しく見る</a>
+          <a href="https://wanosuke.jp/portfolio/onomichi/" class="works__item-link" target="_blank">
+            <div class="works__item-img">
+              <img src="./img/img_works6.png" alt="" />
+            </div>
+            <div class="works__item-text">
+              <h3 class="works__item-name">#見つけて尾道レトロキャンペーン!</h3>
+              <p class="works__id-text">ID / Pass：user</p>
+            </div>
+          </a>
         </li>
         <li class="works__item">
-          <div class="works__item-img">
-            <img src="./img/img_works2.jpg" alt="" />
-          </div>
-          <h3 class="works__item-name">
-            スイーツ店公式サイト（サンプル）
-          </h3>
-          <a href="https://wanosuke-t.github.io/wanosuke_practice/" target="_blank" class="works__item-link">詳しく見る</a>
+          <a href="https://wanosuke.jp/portfolio/sobolon/" class="works__item-link" target="_blank">
+            <div class="works__item-img">
+              <img src="./img/img_works5.png" alt="" />
+            </div>
+            <div class="works__item-text">
+              <h3 class="works__item-name">sobolon</h3>
+              <p class="works__id-text">ID / Pass：user</p>
+            </div>
+          </a>
+        </li>
+        <li class="works__item">
+          <a href="https://wanosuke.jp/portfolio/e-tiga/" class="works__item-link" target="_blank">
+            <div class="works__item-img">
+              <img src="./img/img_works4.png" alt="" />
+            </div>
+            <div class="works__item-text">
+              <h3 class="works__item-name">e-tiga</h3>
+              <p class="works__id-text">ID / Pass：user</p>
+            </div>
+          </a>
+        </li>
+        <li class="works__item">
+          <a href="https://wanosuke.jp/portfolio/oha/" class="works__item-link" target="_blank">
+            <div class="works__item-img">
+              <img src="./img/img_works3.png" alt="" />
+            </div>
+            <div class="works__item-text">
+              <h3 class="works__item-name">OHA!</h3>
+              <p class="works__id-text">ID / Pass：user</p>
+            </div>
+          </a>
+        </li>
+        <li class="works__item">
+          <a href="#" class="works__item-link">
+            <div class="works__item-img">
+              <img src="./img/img_works1.png" alt="" />
+            </div>
+            <div class="works__item-text">
+              <h3 class="works__item-name">ポートフォリオサイト</h3>
+            </div>
+          </a>
+        </li>
+        <li class="works__item">
+          <a class="works__item-link" href="https://wanosuke-t.github.io/wanosuke_practice/" target="_blank">
+            <div class="works__item-img">
+              <img src="./img/img_works2.jpg" alt="" />
+            </div>
+            <div class="works__item-text">
+              <h3 class="works__item-name">スイーツ店公式サイト<br>（サンプル）</h3>
+              <!-- <p class="works__id-text">ID / Pass：user</p> -->
+            </div>
+          </a>
         </li>
       </ul>
     </div>
@@ -159,8 +209,8 @@
           </div>
           <h3 class="service__item-name">コーディング代行</h3>
           <p class="service__item-text">
-            デザインカンプ等の仕様をもとに、HTML・CSS・JavaScriptでコーディングを行います。<br />
-            レスポンシブ対応や、シンプルなアニメーション実装も対応可能です。
+            デザインカンプ等の仕様をもとに、HTML・CSS（Sass）・JavaScriptでコーディングを行います。<br />
+            レスポンシブ対応や、jQueryやSwiperによるシンプルなアニメーション実装も対応可能です。
           </p>
         </li>
         <li class="service__item">
@@ -251,6 +301,7 @@
           <img src="./img/img_about_me.jpg" alt="" />
         </div>
         <div class="about__content">
+          <p class="about__name">わのすけ（高橋 和也）</p>
           <p class="about__description">1983年生まれ、埼玉県秩父在住。
             大学卒業後、SIerにて小規模な法人向けシステムの開発や保守、コンピュータその他周辺機器セットアップサービスの管理・実施を主に担当しておりました。
             現在は、家庭と両立しながらフリーランスの Webコーダー として活動しています。</p>
@@ -320,6 +371,11 @@
     </div>
   </section>
 
+
+  <a id="js-pagetop" class="pagetop" href="#">
+    <img src="./img/pagetop.png" alt="" width="500" height="500">
+  </a>
+
   <footer class="footer section-base">
     <div class="footer__inner">
       <div class="footer__sns-icon">
@@ -335,6 +391,8 @@
       </div>
     </div>
   </footer>
+
+
 
 
   <!-- jQuery -->
