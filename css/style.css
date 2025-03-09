@@ -1,3 +1,9 @@
+@media screen and (min-width: 768px) {
+  .hide-on-pc {
+    display: none;
+  }
+}
+
 .button {
   font-size: 18px;
   font-weight: 700;
@@ -114,7 +120,7 @@ body {
   left: 0;
   width: 100%;
   background: #ffffff;
-  border-top: 4px solid #00558f;
+  border-top: 3px solid #00558f;
   z-index: 2000;
 }
 @media screen and (min-width: 768px) {
@@ -123,7 +129,7 @@ body {
     top: 0;
     bottom: auto;
     border-top: none;
-    border-bottom: 4px solid #00558f;
+    border-bottom: 3px solid #00558f;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -465,7 +471,7 @@ body {
 
 .fv__content {
   position: absolute;
-  top: 240px;
+  top: 220px;
   left: 20px;
 }
 @media screen and (min-width: 768px) {
@@ -509,6 +515,7 @@ body {
 
 .works__item-link {
   position: relative;
+  display: block;
 }
 .works__item-link:hover::before {
   content: "";
@@ -870,19 +877,19 @@ body {
   padding: 8px;
 }
 .form__input-text::-webkit-input-placeholder {
-  color: #636c73;
+  color: lightgray;
 }
 .form__input-text::-moz-placeholder {
-  color: #636c73;
+  color: lightgray;
 }
 .form__input-text:-ms-input-placeholder {
-  color: #636c73;
+  color: lightgray;
 }
 .form__input-text::-ms-input-placeholder {
-  color: #636c73;
+  color: lightgray;
 }
 .form__input-text::placeholder {
-  color: #636c73;
+  color: lightgray;
 }
 
 .form__textarea {
@@ -894,19 +901,19 @@ body {
   resize: vertical;
 }
 .form__textarea::-webkit-input-placeholder {
-  color: #636c73;
+  color: lightgray;
 }
 .form__textarea::-moz-placeholder {
-  color: #636c73;
+  color: lightgray;
 }
 .form__textarea:-ms-input-placeholder {
-  color: #636c73;
+  color: lightgray;
 }
 .form__textarea::-ms-input-placeholder {
-  color: #636c73;
+  color: lightgray;
 }
 .form__textarea::placeholder {
-  color: #636c73;
+  color: lightgray;
 }
 
 .form__submit {

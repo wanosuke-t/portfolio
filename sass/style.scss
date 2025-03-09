@@ -31,6 +31,12 @@ $inner-width-sp: 335px;
 $inner-width-pc: 900px;
 
 // 共通
+.hide-on-pc {
+  @include mq(pc) {
+    display: none;
+  }
+}
+
 .button {
   font-size: 18px;
   font-weight: 700;
@@ -140,7 +146,7 @@ body {
   left: 0;
   width: 100%;
   background: $color--white;
-  border-top: 4px solid $color--main;
+  border-top: 3px solid $color--main;
   z-index: 2000;
 
   @include mq(pc) {
@@ -148,7 +154,7 @@ body {
     top: 0;
     bottom: auto;
     border-top: none;
-    border-bottom: 4px solid #00558f;
+    border-bottom: 3px solid #00558f;
     display: flex;
     align-items: center;
   }
@@ -439,7 +445,7 @@ body {
 
 .fv__content {
   position: absolute;
-  top: 240px;
+  top: 220px;
   left: 20px;
 
   @include mq(pc) {
@@ -485,6 +491,7 @@ body {
 
 .works__item-link {
   position: relative;
+  display: block;
 
   &:hover {
     &::before {
@@ -499,6 +506,7 @@ body {
       left: 0;
       z-index: 30;
     }
+
     .works__item-img {
       img {
         transform: scale(1.2);
@@ -830,7 +838,7 @@ body {
   padding: 8px;
 
   &::placeholder {
-    color: $color--gray;
+    color: lightgray;
   }
 }
 .form__textarea {
@@ -842,7 +850,7 @@ body {
   resize: vertical;
 
   &::placeholder {
-    color: $color--gray;
+    color: lightgray;
   }
 }
 .form__submit {

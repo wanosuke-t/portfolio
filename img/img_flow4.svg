@@ -1,10 +1,1 @@
-<svg width="64" height="64" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
-<g clip-path="url(#clip0_1_383)">
-<path d="M54 6H26C23.7875 6 22 7.7875 22 10V12H16V10C16 4.475 20.475 0 26 0H54C59.525 0 64 4.475 64 10V38C64 43.525 59.525 48 54 48H52V42H54C56.2125 42 58 40.2125 58 38V10C58 7.7875 56.2125 6 54 6ZM6 56C6 57.1 6.9 58 8 58H40C41.1 58 42 57.1 42 56V32H6V56ZM8 16H40C44.4125 16 48 19.5875 48 24V56C48 60.4125 44.4125 64 40 64H8C3.5875 64 0 60.4125 0 56V24C0 19.5875 3.5875 16 8 16Z" fill="#7F7F7F"/>
-</g>
-<defs>
-<clipPath id="clip0_1_383">
-<rect width="64" height="64" fill="white"/>
-</clipPath>
-</defs>
-</svg>
+<svg fill="none" height="64" viewBox="0 0 64 64" width="64" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><clipPath id="a"><path d="m0 0h64v64h-64z"/></clipPath><g clip-path="url(#a)"><path d="m54 6h-28c-2.2125 0-4 1.7875-4 4v2h-6v-2c0-5.525 4.475-10 10-10h28c5.525 0 10 4.475 10 10v28c0 5.525-4.475 10-10 10h-2v-6h2c2.2125 0 4-1.7875 4-4v-28c0-2.2125-1.7875-4-4-4zm-48 50c0 1.1.9 2 2 2h32c1.1 0 2-.9 2-2v-24h-36zm2-40h32c4.4125 0 8 3.5875 8 8v32c0 4.4125-3.5875 8-8 8h-32c-4.4125 0-8-3.5875-8-8v-32c0-4.4125 3.5875-8 8-8z" fill="#7f7f7f"/></g></svg>
