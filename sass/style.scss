@@ -43,7 +43,7 @@ $inner-width-pc: 900px;
   transition: color 0.3s, background-color 0.3s;
 
   @include mq(pc) {
-    font-size: 20px;
+    font-size: 18px;
     padding: 6px 18px;
   }
 
@@ -54,12 +54,16 @@ $inner-width-pc: 900px;
 }
 
 .title {
+  @include mq(pc) {
+    max-width: 640px;
+    margin-inline: auto;
+  }
 }
 
 .title__text {
   font-size: 24px;
   font-weight: 700;
-  display: flex;
+  display: inline-flex;
   align-items: center;
   gap: 8px;
 
@@ -87,16 +91,23 @@ $inner-width-pc: 900px;
   margin-inline: auto;
 
   @include mq(pc) {
-    padding-inline: 40px;
-    max-width: calc($inner-width-pc + 40px * 2);
+    max-width: calc($inner-width-pc + 20px * 2);
   }
 }
 
 .description {
   margin-top: 16px;
+
+  @include mq(pc) {
+    margin-top: 32px;
+  }
 }
 
 // ベース
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: $font-family;
   font-size: 14px;
@@ -119,11 +130,13 @@ body {
   z-index: 2000;
 
   @include mq(pc) {
-    height: 78px;
+    height: 76px;
     top: 0;
     bottom: auto;
     border-top: none;
     border-bottom: 4px solid #00558f;
+    display: flex;
+    align-items: center;
   }
 }
 
@@ -174,7 +187,7 @@ body {
       z-index: -20;
     }
     &::after {
-      top: -4px;
+      top: -13px;
       z-index: -10;
     }
   }
@@ -192,6 +205,7 @@ body {
 .header__menu-button {
   width: 50%;
   padding: 16px;
+  color: $color--black;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -285,7 +299,7 @@ body {
   transition: color 0.3s;
 
   @include mq(pc) {
-    padding-block: 24px;
+    padding-block: 16px;
   }
 
   &:hover {
@@ -295,8 +309,6 @@ body {
   }
 }
 .header__button-contact {
-}
-.button {
 }
 
 // ドロワー
@@ -365,10 +377,11 @@ body {
 // ファーストビュー
 .fv {
   position: relative;
-  height: 480px;
+  height: 400px;
 
   @include mq(pc) {
     padding-top: 60px;
+    height: 480px;
   }
 }
 
@@ -397,7 +410,7 @@ body {
 
 .fv__logo {
   position: absolute;
-  top: 20px;
+  top: 32px;
   left: 0;
 
   img {
@@ -411,11 +424,10 @@ body {
 
 .fv__content {
   position: absolute;
-  top: 320px;
+  top: 240px;
   left: 20px;
 
   @include mq(pc) {
-    top: 240px;
     left: 120px;
   }
 }
@@ -542,6 +554,7 @@ body {
   margin-inline: auto;
 
   @include mq(pc) {
+    margin-top: 80px;
     grid-template-columns: repeat(4, 1fr);
     gap: 20px;
     max-width: 100%;
@@ -644,6 +657,7 @@ body {
 }
 .about__description {
 }
+
 .about__skill {
   margin-top: 32px;
   font-size: 16px;
@@ -675,29 +689,50 @@ body {
 .contact {
   padding-bottom: 120px;
 }
+
 .contact__inner {
+}
+
+.contact__description {
+}
+
+.contact__form {
   @include mq(pc) {
     max-width: 640px;
     margin-inline: auto;
   }
 }
-.contact__form {
-}
+
 .form {
 }
+
 .form__list {
   margin-top: 36px;
   display: flex;
   flex-direction: column;
   gap: 16px;
 }
+
 .form__item {
+  @include mq(pc) {
+    display: flex;
+    gap: 16px;
+
+    &:nth-child(3) {
+      align-items: flex-start;
+    }
+  }
 }
 .form__head {
   display: flex;
   justify-content: flex-start;
   align-items: center;
   gap: 8px;
+
+  @include mq(pc) {
+    flex-shrink: 0;
+    width: 160px;
+  }
 }
 .form__label {
   font-size: 16px;
@@ -712,6 +747,9 @@ body {
 }
 
 .form__input {
+  @include mq(pc) {
+    width: 100%;
+  }
 }
 .form__input-text {
   width: 100%;
