@@ -12,12 +12,12 @@
   <meta name="twitter:card" content="summary" />
   <meta name="twitter:site" content="@wanosuke_t" />
   <meta property="og:url" content="https://wanosuke.jp/" />
-  <meta property="og:title" content="和ノ助｜誠実・丁寧なWeb制作" />
+  <meta property="og:title" content="Web制作 わのすけ" />
   <meta property="og:description"
     content="フリーランスWebコーダー「わのすけ」のポートフォリオサイト。「Web制作を頼みたい」「既存のWebサイトを修正・改善したい」など、気軽にご相談ください。" />
   <meta property="og:image" content="https://wanosuke.jp/img/x_card.png" />
 
-  <title>わのすけ</title>
+  <title>Web制作 わのすけ</title>
   <meta name="description" content="フリーランスWebコーダー「わのすけ」のポートフォリオサイト。「Web制作を頼みたい」「既存のWebサイトを修正・改善したい」など、気軽にご相談ください。" />
 
   <!-- Google Fonts -->
@@ -26,71 +26,85 @@
   <link
     href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
     rel="stylesheet">
+
+
+
+
   <!-- スタイルシート -->
   <link rel="stylesheet" href="css/reset.css" />
   <link rel="stylesheet" href="css/style.css" />
+
+
+  <script src="https://kit.fontawesome.com/7ad391357c.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
-  <div class="wrapper">
-    <header class="header">
-      <div class="header__inner">
-        <h1 class="header__logo">
-          <a href="#">
-            <picture>
-              <source media="(min-width: 768px)" srcset="./img/logo.png" />
-              <img src="./img/sp/logo-sp.png" alt="Web制作 わのすけ" />
-            </picture>
-          </a>
-        </h1>
-        <button class="header__menu-button">
-          <span class="header__menu-button-text">メニュー</span>
-          <div class="header__menu-button-bars">
-            <span class="header__menu-button-bar"></span>
-            <span class="header__menu-button-bar"></span>
-            <span class="header__menu-button-bar"></span>
-          </div>
-        </button>
-        <nav class="header__nav">
-          <ul class="header__nav-list">
-            <li class="header__nav-item">
-              <a class="header__nav-link" href="#works">実績紹介</a>
-            </li>
-            <li class="header__nav-item">
-              <a class="header__nav-link" href="#service">提供サービス</a>
-            </li>
-            <li class="header__nav-item">
-              <a class="header__nav-link" href="#flow">制作の流れ</a>
-            </li>
-            <li class="header__nav-item">
-              <a class="header__nav-link" href="#about">私について</a>
-            </li>
-          </ul>
-          <div class="header__button-contact"><a class="button" href="#contact">お問い合わせ</a></div>
-        </nav>
+  <header class="header">
+    <div class="header__inner">
+      <h1 class="header__logo">
+        <a href="#">
+          <picture>
+            <source media="(min-width: 768px)" srcset="./img/logo.png" />
+            <img src="./img/sp/logo-sp.png" alt="Web制作 わのすけ" />
+          </picture>
+        </a>
+      </h1>
+      <button id="js-drawer-icon" class="header__menu-button">
+        <span class="header__menu-button-text">メニュー</span>
+        <div class="header__menu-button-bars">
+          <span class="header__menu-button-bar"></span>
+          <span class="header__menu-button-bar"></span>
+          <span class="header__menu-button-bar"></span>
+        </div>
+      </button>
+      <nav class="header__nav">
+        <ul class="header__nav-list">
+          <li class="header__nav-item">
+            <a class="header__nav-link" href="#works">実績紹介</a>
+          </li>
+          <li class="header__nav-item">
+            <a class="header__nav-link" href="#service">提供サービス</a>
+          </li>
+          <li class="header__nav-item">
+            <a class="header__nav-link" href="#flow">制作の流れ</a>
+          </li>
+          <li class="header__nav-item">
+            <a class="header__nav-link" href="#about">私について</a>
+          </li>
+        </ul>
+        <div class="header__button-contact"><a class="button" href="#contact">お問い合わせ</a></div>
+      </nav>
+    </div>
+  </header>
 
+  <!-- ドロワーメニュー -->
+  <nav id="js-drawer-content" class="drawer__nav">
+    <ul class="drawer__nav-list">
+      <li class="drawer__nav-item">
+        <a class="drawer__nav-link" href="#works">実績紹介</a>
+      </li>
+      <li class="drawer__nav-item">
+        <a class="drawer__nav-link" href="#service">提供サービス</a>
+      </li>
+      <li class="drawer__nav-item">
+        <a class="drawer__nav-link" href="#flow">制作の流れ</a>
+      </li>
+      <li class="drawer__nav-item">
+        <a class="drawer__nav-link" href="#about">私について</a>
+      </li>
+    </ul>
+    <div class="drawer__button-contact"><a class="button" href="#contact">お問い合わせ</a></div>
+    <div class="drawer__sns-icon">
+      <div class="drawer__twitter-icon">
+        <i class="fa-brands fa-square-x-twitter"></i>
+        <img src="./img/square-x-twitter-brands.svg" alt="Xアイコン" width="20" height="21">
       </div>
-    </header>
+      <div class="drawer__github-icon">
+        <img src="./img/square-github-brands.svg" alt="githubアイコン" width="20" height="21">
+      </div>
+    </div>
 
-    <!-- ドロワーメニュー -->
-    <nav class="drawer__nav">
-      <ul class="drawer__nav-list">
-        <li class="drawer__nav-item">
-          <a class="drawer__nav-link" href="#works">実績紹介</a>
-        </li>
-        <li class="drawer__nav-item">
-          <a class="drawer__nav-link" href="#service">提供サービス</a>
-        </li>
-        <li class="drawer__nav-item">
-          <a class="drawer__nav-link" href="#flow">制作の流れ</a>
-        </li>
-        <li class="drawer__nav-item">
-          <a class="drawer__nav-link" href="#about">私について</a>
-        </li>
-      </ul>
-      <div class="header__button-contact"><a class="button" href="#contact">お問い合わせ</a></div>
-    </nav>
-  </div>
+  </nav>
 
   <section class="fv">
     <div class="fv__bg">
@@ -105,7 +119,7 @@
   </section>
 
 
-  <section class="works section-base">
+  <section id="works" class="works section-base">
     <div class="works__inner inner">
       <div class="title">
         <h2 class="title__text">実績紹介</h2>
@@ -136,7 +150,7 @@
 
 
 
-  <section class="service section-base">
+  <section id="service" class="service section-base">
     <div class="service__inner inner">
       <div class="title">
         <h2 class="title__text">提供サービス</h2>
@@ -179,7 +193,7 @@
   </section>
 
 
-  <section class="flow section-base">
+  <section id="flow" class="flow section-base">
     <div class="flow__inner inner">
       <div class="title">
         <h2 class="title__text">制作の流れ</h2>
@@ -232,7 +246,7 @@
   </section>
 
 
-  <section class="about section-base">
+  <section id="about" class="about section-base">
     <div class="about__inner inner">
       <div class="title">
         <h2 class="title__text">自己紹介</h2>
@@ -293,26 +307,12 @@
             </li>
             <li class="form__item">
               <div class="form__head">
-                <label for="form__type" class="form__label">お問い合わせ内容</label>
-                <span class="form__tag">必須</span>
-              </div>
-              <div class="form__input">
-                <select name="form__type" id="form__type" class="js-form__input form__select" required>
-                  <option value="">選択してください</option>
-                  <option value="">選択項目１</option>
-                  <option value="">選択項目２</option>
-                  <option value="">選択項目３</option>
-                </select>
-              </div>
-            </li>
-            <li class="form__item">
-              <div class="form__head">
                 <label for="your-message" class="form__label">メッセージ</label>
                 <span class="form__tag">必須</span>
               </div>
               <div class="form__input">
                 <textarea class="js-form__input form__textarea" name="your-message" id="your-message"
-                  placeholder="このキャンペーンに関するお問い合わせがある方は、こちらにご相談内容をご入力ください。3営業日以内にご返信いたします。" required></textarea>
+                  placeholder="こちらにお問い合わせ内容をご記入ください。" required></textarea>
               </div>
             </li>
           </ul>
@@ -325,10 +325,18 @@
     </div>
   </section>
 
+  <footer class="footer section-base">
+    <div class="footer__inner">
+      <div class="footer__copyright">
+        <small>© わのすけ All rights reserved.</small>
+      </div>
+    </div>
+  </footer>
 
 
   <!-- jQuery -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
   <script src="./js/index.js"></script>
 </body>
 
