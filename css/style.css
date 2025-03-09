@@ -199,7 +199,7 @@ body {
     z-index: -20;
   }
   .header__logo::after {
-    top: -13px;
+    top: -12.7px;
     z-index: -10;
   }
 }
