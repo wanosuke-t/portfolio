@@ -28,7 +28,7 @@ $color--white: #ffffff;
 
 $header-height: 64px;
 $inner-width-sp: 335px;
-$inner-width-pc: 1140px;
+$inner-width-pc: 900px;
 
 // 共通
 .button {
@@ -191,7 +191,7 @@ body {
 
 .header__menu-button {
   width: 50%;
-  padding: 14px;
+  padding: 16px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -354,13 +354,12 @@ body {
 .drawer__sns-icon {
   margin-top: 16px;
   display: flex;
-  gap: 32px;
+  gap: 16px;
 }
-.drawer__twitter-icon {
-  transform: scale(1.5);
-}
-.drawer__github-icon {
-  transform: scale(1.5);
+.drawer__sns-icon {
+  img {
+    width: 32px;
+  }
 }
 
 // ファーストビュー
@@ -442,9 +441,13 @@ body {
 }
 .works__list {
   margin-top: 40px;
-  display: flex;
-  flex-direction: column;
+  display: grid;
+  grid-template-columns: 1fr;
   gap: 40px;
+
+  @include mq(pc) {
+    grid-template-columns: repeat(3, 1fr);
+  }
 }
 .works__item {
 }
@@ -469,27 +472,27 @@ body {
 
 // 提供サービス
 .service {
-  // padding-block: 60px;
-
-  // @include mq(pc) {
-  //   margin-block: 80px;
-  // }
 }
 .service__inner {
 }
 
 .service__description {
-  // margin-top: 16px;
 }
 
 .service__list {
   margin-top: 48px;
-  display: flex;
-  flex-direction: column;
+  display: grid;
+  grid-template-columns: 1fr;
   gap: 40px;
   padding-inline: 20px;
   max-width: 300px;
   margin-inline: auto;
+
+  @include mq(pc) {
+    margin-top: 80px;
+    grid-template-columns: repeat(3, 1fr);
+    max-width: 1140px;
+  }
 }
 
 .service__item {
@@ -498,14 +501,25 @@ body {
   align-items: center;
 }
 .service__item-img {
+  img {
+    height: 56px;
+  }
 }
 .service__item-name {
   margin-top: 8px;
   font-size: 16px;
   font-weight: 700;
+
+  @include mq(pc) {
+    margin-top: 24px;
+  }
 }
 .service__item-text {
   margin-top: 8px;
+
+  @include mq(pc) {
+    margin-top: 14px;
+  }
 }
 
 // 制作の流れ
@@ -520,12 +534,19 @@ body {
 
 .flow__list {
   margin-top: 48px;
-  display: flex;
-  flex-direction: column;
+  display: grid;
+  grid-template-columns: 1fr;
   gap: 40px;
   padding-inline: 20px;
   max-width: 280px;
   margin-inline: auto;
+
+  @include mq(pc) {
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    max-width: 100%;
+    padding-inline: 0;
+  }
 }
 
 .flow__item {
@@ -576,6 +597,9 @@ body {
 }
 
 .flow__item-img {
+  img {
+    height: 56px;
+  }
 }
 .flow__item-name {
   margin-top: 8px;
@@ -584,6 +608,10 @@ body {
 }
 .flow__item-text {
   margin-top: 8px;
+
+  @include mq(pc) {
+    font-size: 14px;
+  }
 }
 
 // 自己紹介
@@ -600,12 +628,19 @@ body {
 .about__img {
   margin-block: 32px;
 
+  @include mq(pc) {
+    margin-block: 64px;
+  }
+
   img {
     width: 240px;
     border-radius: 50%;
   }
 }
 .about__content {
+  @include mq(pc) {
+    max-width: 640px;
+  }
 }
 .about__description {
 }
@@ -615,6 +650,10 @@ body {
   font-weight: 700;
 }
 .about__skill-list {
+  @include mq(pc) {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
 
 .about__skill-item {
@@ -634,8 +673,13 @@ body {
 
 // お問い合わせ
 .contact {
+  padding-bottom: 120px;
 }
 .contact__inner {
+  @include mq(pc) {
+    max-width: 640px;
+    margin-inline: auto;
+  }
 }
 .contact__form {
 }
@@ -685,6 +729,7 @@ body {
   border: 2px solid $color--main;
   border-radius: 6px;
   padding: 8px;
+  resize: vertical;
 
   &::placeholder {
     color: $color--gray;
@@ -699,15 +744,35 @@ body {
 
 // フッター
 .footer {
-  padding-block: 40px 60px;
+  padding-block: 40px 70px;
   background: $color--main;
+
+  @include mq(pc) {
+    padding-block: 40px 20px;
+  }
 }
 .footer__inner {
 }
+
+.footer__sns-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+}
+
+.footer__sns-link {
+  img {
+    width: 32px;
+  }
+}
+
 .footer__copyright {
+  margin-top: 16px;
   text-align: center;
 
   small {
     color: $color--white;
+    font-size: 10px;
   }
 }
